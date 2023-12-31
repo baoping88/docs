@@ -1,15 +1,12 @@
 ![logo](https://cdn.rawgit.com/go-chi/chi/master/_examples/chi.svg)
 
-> A lightweight, idiomatic and composable router for building Go HTTP services.
+> 人社“跨年杯”网络安全大赛
 
-- 🚀 Lightweight
-- ⚡️️ Fast
-- 🔥 Robust
-- 📼 No external dependencies
+- 🔥 欢迎各位大佬来耍
 
 <div class="buttons">
-  <a href="https://github.com/go-chi/chi/" target="_blank"><span>GitHub</span></a>
-  <a href="#/README"><span>Get Started</span></a>
+  <a href="http://120.46.45.74:19999/" target="_blank"><span>进入靶场</span></a>
+  <a href="#/README"><span>“跨年杯”测试赛Writeup</span></a>
 </div>
 
 <!-- background color -->
