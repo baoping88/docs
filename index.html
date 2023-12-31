@@ -40,36 +40,84 @@
   </script>
   <script>
     window.$docsify = {
-      name: '“跨年杯”测试赛WP',
-      // repo: 'go-chi/chi',
-      loadSidebar: true,
-      subMaxLevel: 3,
-      coverpage: true,
-      onlyCover: true,
-      auto2top: true,
-      homepage: 'README.md',
-      logo: 'https://cdn.rawgit.com/go-chi/chi/master/_examples/chi.svg',
-      themeColor: '#14b853',
+      basePath: '/', // 资源相对路径
+      name: '“跨年杯”测试赛wp', // 文档标题，会显示在侧边栏顶部
+      nameLink: '/', // 点击文档标题后的跳转地址
+      // repo: 'cycxtIT/web-doc', // 有repo属性则右上角会展示github图标，点击可进入
+      loadSidebar: true, // 加载侧边栏
+      externalLinkTarget: '_blank', // 外部链接的打开方式，默认_blank
+      cornerExternalLinkTarget: '_blank', // 右上角链接的打开方式。默认为 _blank
+      routerMode: 'hash', // 路由方式 默认hash
+      coverpage: true, // 展示封面
+      notFoundPage: true, // 在找不到指定页面时加载_404.md
+      auto2top: true, // 切换页面后是否自动跳转到页面顶部
+      search: { // 搜索插件配置
+        paths: 'auto',
+        placeholder: '搜索',
+        noData: '没有结果!'
+      },
+      count: { // 字数统计插件配置
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+      pagination: { // 分页插件配置
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true,
+      },
+      // plugins: [
+      //   EditOnGithubPlugin.create(
+      //     'https://github.com/cycxtIT/web-doc/blob/master/docs/',
+      //     null,
+      //     function ( file ) {
+      //       if ( file.indexOf( 'en' ) === -1 ) {
+      //         return '在 GitHub 上编辑'
+      //       } else {
+      //         return 'Edit on Github'
+      //       }
+      //     }
+      //   )
+      // ],
+      themeColor: "#42b983", // 暗黑模式主题色
       darklightTheme: {
-        defaultTheme : 'dark',
-        codeFontFamily : "'Open Sans', sans-serif",
-        siteFont : "'Open Sans'",
+        siteFont: "PT Sans",
+        defaultTheme: 'dark',
+        codeFontFamily: 'Roboto Mono, Monaco, courier, monospace',
+        bodyFontSize: '17px',
         dark: {
-          textColor: '#ffffff',
-          blockQuoteColor: '#999999',
-          coverBackground : '##091a28',
+          accent: '#42b983',
+          toogleBackground: '#ffffff',
+          background: '#091a28',
+          textColor: '#b4b4b4',
+          codeTextColor: '#ffffff',
+          codeBackgroudColor: '#0e2233',
+          borderColor: '#0d2538',
+          blockQuoteColour: '#858585',
+          highlightColor: '#d22778',
+          sidebarSublink: '#b4b4b4',
+          codeTypeColor: '#ffffff',
+          coverBackground: 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+          toogleImage: 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
         },
         light: {
-          coverBackground : '#fafafa',
+          accent: '#42b983',
+          toogleBackground: '#091a28',
+          background: '#ffffff',
+          textColor: '#34495e',
+          codeTextColor: '#525252',
+          codeBackgroudColor: '#f8f8f8',
+          borderColor: 'rgba(0, 0, 0, 0.07)',
+          blockQuoteColor: '#858585',
+          highlightColor: '#d22778',
+          sidebarSublink: '#b4b4b4',
+          codeTypeColor: '#091a28',
+          coverBackground: 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+          toogleImage: 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
         }
-      },
-      search: {
-          paths: 'auto',
-          placeholder: 'Search',
-          noData: 'No Results.'
-      },
-      routerMode: 'hash'
-    };
+      }
+    }
   </script>
 </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>  
