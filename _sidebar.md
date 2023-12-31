@@ -1,3 +1,3 @@
 - 开始
 
-  - [WP](/README.md)
+  - [测试赛](/README.md)
