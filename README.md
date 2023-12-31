@@ -9,7 +9,7 @@
 Payload：
 
 ```JSON
-http://120.46.45.74:8802/admin/download.php?ﬁle=/ﬂag
+http://ip:8802/admin/download.php?ﬁle=/ﬂag
 ```
 
 # 构造cookie，获取管理员权限
